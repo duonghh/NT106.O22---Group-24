@@ -1,0 +1,17 @@
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\bin\Debug\net8.0-windows\BaiTap_Tuan-1-2.exe
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\bin\Debug\net8.0-windows\BaiTap_Tuan-1-2.deps.json
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\bin\Debug\net8.0-windows\BaiTap_Tuan-1-2.runtimeconfig.json
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\bin\Debug\net8.0-windows\BaiTap_Tuan-1-2.dll
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\bin\Debug\net8.0-windows\BaiTap_Tuan-1-2.pdb
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\obj\Debug\net8.0-windows\BaiTap_Tuan_1_2.Form1.resources
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\obj\Debug\net8.0-windows\BaiTap_Tuan-1-2.csproj.GenerateResource.cache
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\obj\Debug\net8.0-windows\BaiTap_Tuan-1-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\obj\Debug\net8.0-windows\BaiTap_Tuan-1-2.AssemblyInfoInputs.cache
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\obj\Debug\net8.0-windows\BaiTap_Tuan-1-2.AssemblyInfo.cs
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\obj\Debug\net8.0-windows\BaiTap_Tuan-1-2.csproj.CoreCompileInputs.cache
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\obj\Debug\net8.0-windows\BaiTap_Tuan-1-2.sourcelink.json
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\obj\Debug\net8.0-windows\BaiTap_Tuan-1-2.dll
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\obj\Debug\net8.0-windows\refint\BaiTap_Tuan-1-2.dll
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\obj\Debug\net8.0-windows\BaiTap_Tuan-1-2.pdb
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\obj\Debug\net8.0-windows\BaiTap_Tuan-1-2.genruntimeconfig.cache
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\BaiTap_Tuan-1-2\obj\Debug\net8.0-windows\ref\BaiTap_Tuan-1-2.dll

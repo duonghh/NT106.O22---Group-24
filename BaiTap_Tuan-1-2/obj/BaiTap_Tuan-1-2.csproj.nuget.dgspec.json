@@ -1,28 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\LopLyThuyet\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\BaiTap_Tuan-1-2.csproj": {}
+    "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\BaiTap_Tuan-1-2.csproj": {}
   },
   "projects": {
-    "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\LopLyThuyet\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\BaiTap_Tuan-1-2.csproj": {
+    "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\BaiTap_Tuan-1-2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\LopLyThuyet\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\BaiTap_Tuan-1-2.csproj",
+        "projectUniqueName": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\BaiTap_Tuan-1-2.csproj",
         "projectName": "BaiTap_Tuan-1-2",
-        "projectPath": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\LopLyThuyet\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\BaiTap_Tuan-1-2.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\LopLyThuyet\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\obj\\",
+        "projectPath": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\BaiTap_Tuan-1-2.csproj",
+        "packagesPath": "C:\\Users\\hieun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hieun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
