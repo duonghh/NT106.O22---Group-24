@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimpleWindowExplorer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7a04070928bb8470712576123fd801155d01d4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+067143230b11cc3a93cb7f9bfe72c10f3215d53b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimpleWindowExplorer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimpleWindowExplorer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

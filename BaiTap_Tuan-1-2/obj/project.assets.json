@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\BaiTap_Tuan-1-2.csproj",
-      "projectName": "BaiTap_Tuan-1-2",
-      "projectPath": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\BaiTap_Tuan-1-2.csproj",
+      "projectUniqueName": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\Caculator.csproj",
+      "projectName": "Caculator",
+      "projectPath": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\Caculator.csproj",
       "packagesPath": "C:\\Users\\hieun\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\obj\\",
       "projectStyle": "PackageReference",

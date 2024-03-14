@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("BaiTap_Tuan-1-2")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Caculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+067143230b11cc3a93cb7f9bfe72c10f3215d53b")]
-[assembly: System.Reflection.AssemblyProductAttribute("BaiTap_Tuan-1-2")]
-[assembly: System.Reflection.AssemblyTitleAttribute("BaiTap_Tuan-1-2")]
+[assembly: System.Reflection.AssemblyProductAttribute("Caculator")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Caculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
