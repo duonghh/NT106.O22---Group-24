@@ -49,17 +49,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(122, 16);
+            label1.Location = new Point(139, 21);
             label1.Name = "label1";
-            label1.Size = new Size(34, 15);
+            label1.Size = new Size(40, 20);
             label1.TabIndex = 0;
             label1.Text = "Path:";
             // 
             // previousButton
             // 
-            previousButton.Location = new Point(12, 12);
+            previousButton.Location = new Point(14, 16);
+            previousButton.Margin = new Padding(3, 4, 3, 4);
             previousButton.Name = "previousButton";
-            previousButton.Size = new Size(49, 23);
+            previousButton.Size = new Size(56, 31);
             previousButton.TabIndex = 1;
             previousButton.Text = "<<";
             previousButton.UseVisualStyleBackColor = true;
@@ -67,9 +68,10 @@
             // 
             // nextButton
             // 
-            nextButton.Location = new Point(67, 12);
+            nextButton.Location = new Point(77, 16);
+            nextButton.Margin = new Padding(3, 4, 3, 4);
             nextButton.Name = "nextButton";
-            nextButton.Size = new Size(49, 23);
+            nextButton.Size = new Size(56, 31);
             nextButton.TabIndex = 1;
             nextButton.Text = ">>";
             nextButton.UseVisualStyleBackColor = true;
@@ -77,18 +79,20 @@
             // 
             // pathTextBox
             // 
-            pathTextBox.Location = new Point(162, 12);
+            pathTextBox.Location = new Point(185, 16);
+            pathTextBox.Margin = new Padding(3, 4, 3, 4);
             pathTextBox.Name = "pathTextBox";
-            pathTextBox.Size = new Size(556, 23);
+            pathTextBox.Size = new Size(635, 27);
             pathTextBox.TabIndex = 2;
             pathTextBox.MouseClick += pathTextBox_MouseClick;
             pathTextBox.KeyDown += pathTextBox_KeyDown;
             // 
             // openButton
             // 
-            openButton.Location = new Point(724, 11);
+            openButton.Location = new Point(827, 15);
+            openButton.Margin = new Padding(3, 4, 3, 4);
             openButton.Name = "openButton";
-            openButton.Size = new Size(64, 23);
+            openButton.Size = new Size(73, 31);
             openButton.TabIndex = 1;
             openButton.Text = "Open";
             openButton.UseVisualStyleBackColor = true;
@@ -98,44 +102,51 @@
             // 
             fileListView.ContextMenuStrip = menu;
             fileListView.LargeImageList = iconList;
-            fileListView.Location = new Point(12, 41);
+            fileListView.Location = new Point(14, 55);
+            fileListView.Margin = new Padding(3, 4, 3, 4);
             fileListView.Name = "fileListView";
-            fileListView.Size = new Size(776, 397);
+            fileListView.Size = new Size(886, 528);
             fileListView.SmallImageList = iconList;
             fileListView.TabIndex = 3;
             fileListView.UseCompatibleStateImageBehavior = false;
             fileListView.ItemSelectionChanged += fileListView_ItemSelectionChanged;
+            fileListView.SelectedIndexChanged += fileListView_SelectedIndexChanged;
             fileListView.MouseDoubleClick += fileListView_MouseDoubleClick;
             // 
             // menu
             // 
+            menu.ImageScalingSize = new Size(20, 20);
             menu.Items.AddRange(new ToolStripItem[] { copy, cut, paste, delete });
             menu.Name = "contextMenuStrip1";
-            menu.Size = new Size(108, 92);
+            menu.Size = new Size(123, 100);
             // 
             // copy
             // 
             copy.Name = "copy";
-            copy.Size = new Size(107, 22);
+            copy.Size = new Size(122, 24);
             copy.Text = "Copy";
+            copy.Click += copy_Click;
             // 
             // cut
             // 
             cut.Name = "cut";
-            cut.Size = new Size(107, 22);
+            cut.Size = new Size(122, 24);
             cut.Text = "Cut";
+            cut.Click += cut_Click;
             // 
             // paste
             // 
             paste.Name = "paste";
-            paste.Size = new Size(107, 22);
+            paste.Size = new Size(122, 24);
             paste.Text = "Paste";
+            paste.Click += paste_Click;
             // 
             // delete
             // 
             delete.Name = "delete";
-            delete.Size = new Size(107, 22);
+            delete.Size = new Size(122, 24);
             delete.Text = "Delete";
+            delete.Click += delete_Click;
             // 
             // iconList
             // 
@@ -147,15 +158,16 @@
             // 
             // SimpleWindowExplorer
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(fileListView);
             Controls.Add(pathTextBox);
             Controls.Add(openButton);
             Controls.Add(nextButton);
             Controls.Add(previousButton);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "SimpleWindowExplorer";
             Text = "Simple Window Explorer";
             Load += SimpleWindowExplorer_Load;
