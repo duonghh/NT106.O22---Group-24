@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj": {}
+    "C:\\Users\\hieun\\OneDrive\\Documents\\GitHub\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj": {
+    "C:\\Users\\hieun\\OneDrive\\Documents\\GitHub\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj",
+        "projectUniqueName": "C:\\Users\\hieun\\OneDrive\\Documents\\GitHub\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj",
         "projectName": "SimpleWindowExplorer",
-        "projectPath": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj",
+        "projectPath": "C:\\Users\\hieun\\OneDrive\\Documents\\GitHub\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj",
         "packagesPath": "C:\\Users\\hieun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\SimpleWindowExplorer\\obj\\",
+        "outputPath": "C:\\Users\\hieun\\OneDrive\\Documents\\GitHub\\NT106.O22_Group-24\\SimpleWindowExplorer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -25,7 +25,9 @@
           "net8.0-windows"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {

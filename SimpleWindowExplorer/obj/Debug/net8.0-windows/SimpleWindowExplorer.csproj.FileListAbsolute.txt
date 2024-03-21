@@ -23,3 +23,28 @@ C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\SimpleWindowEx
 C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\SimpleWindowExplorer\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
 C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWindowExplorer.csproj.AssemblyReference.cache
 C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWi.976D910B.Up2Date
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\bin\Debug\net8.0-windows\SimpleWindowExplorer.exe
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\bin\Debug\net8.0-windows\SimpleWindowExplorer.deps.json
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\bin\Debug\net8.0-windows\SimpleWindowExplorer.runtimeconfig.json
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\bin\Debug\net8.0-windows\SimpleWindowExplorer.dll
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\bin\Debug\net8.0-windows\SimpleWindowExplorer.pdb
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWindowExplorer.csproj.AssemblyReference.cache
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWindowExplorer.SimpleWindowExplorer.resources
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWindowExplorer.csproj.GenerateResource.cache
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWindowExplorer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWindowExplorer.AssemblyInfoInputs.cache
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWindowExplorer.AssemblyInfo.cs
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWindowExplorer.csproj.CoreCompileInputs.cache
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWindowExplorer.sourcelink.json
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWi.976D910B.Up2Date
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWindowExplorer.dll
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\refint\SimpleWindowExplorer.dll
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWindowExplorer.pdb
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\SimpleWindowExplorer.genruntimeconfig.cache
+C:\Users\hieun\OneDrive\Documents\GitHub\NT106.O22_Group-24\SimpleWindowExplorer\obj\Debug\net8.0-windows\ref\SimpleWindowExplorer.dll
