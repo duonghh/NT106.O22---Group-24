@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Numerics;
@@ -15,8 +14,6 @@ namespace SimpleWindowExplorer
 {
     public partial class SimpleWindowExplorer : Form
     {
-        private string sourceFile;
-        private string destinationFile;
         private string filePathString;
         private string selectedFolder;
         private string[] visitedPaths;
@@ -28,8 +25,6 @@ namespace SimpleWindowExplorer
 
         private void SimpleWindowExplorer_Load(object sender, EventArgs e)
         {
-            sourceFile = "";
-            destinationFile = "";
             filePathString = "C:";
             selectedFolder = "";
             pathTextBox.Text = "C:";
@@ -156,82 +151,5 @@ namespace SimpleWindowExplorer
             }
         }
 
-        private void fileListView_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void copy_Click(object sender, EventArgs e)
-        {
-            sourceFile = Path.Combine(filePathString, selectedFolder);
-            if (File.Exists(sourceFile) || Directory.Exists(sourceFile))
-            {
-                // File hoặc thư mục đã được đánh dấu để sao chép
-            }
-        }
-
-        private void cut_Click(object sender, EventArgs e)
-        {
-            sourceFile = Path.Combine(filePathString, selectedFolder);
-            if (File.Exists(sourceFile) || Directory.Exists(sourceFile))
-            {
-                // File hoặc thư mục đã được đánh dấu để cắt
-            }
-        }
-
-        private void paste_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrEmpty(sourceFile))
-            {
-                destinationFile = Path.Combine(filePathString, Path.GetFileName(sourceFile));
-                try
-                {
-                    // Thực hiện thao tác paste
-                    if (File.Exists(sourceFile))
-                    {
-                        File.Copy(sourceFile, destinationFile, true);
-                        if (sourceFile != destinationFile)
-                        {
-                            File.Delete(sourceFile);
-                        }
-                    }
-                    else if (Directory.Exists(sourceFile))
-                    {
-                        // Thực hiện thao tác paste cho thư mục
-                    }
-                    sourceFile = "";
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Không thể dán file!\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                loadFilesAndDirectory();
-            }
-        }
-
-        private void delete_Click(object sender, EventArgs e)
-        {
-            string fileToDelete = Path.Combine(filePathString, selectedFolder);
-            if (File.Exists(fileToDelete) || Directory.Exists(fileToDelete))
-            {
-                try
-                {
-                    // Thực hiện thao tác delete
-                    if (File.Exists(fileToDelete))
-                    {
-                        File.Delete(fileToDelete);
-                    }
-                    else if (Directory.Exists(fileToDelete))
-                    {
-                        Directory.Delete(fileToDelete, true);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Không thể xóa file!\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                loadFilesAndDirectory();
-            }
-        }
     }
 }
