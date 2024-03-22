@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j/fDZVnOpo+FXXSE+6VpsdfzBpnO0hu3i+cZZgvgMOqeXLZ3sLXCxjRkEWZXaTujYgTm6p22rYYGrATGt9JTVg==",
+  "dgSpecHash": "mHE183zOs5a6q32KqGnC1MNVruTxL01MxmhzK4NnIIlcbLahTg2HbFgCYkwn8Sg9velKC+bQCUtprnU1OF4UPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hieun\\OneDrive\\Documents\\GitHub\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj",
+  "projectFilePath": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hieun\\.nuget\\packages\\microsoft.web.webview2\\1.0.2365.46\\microsoft.web.webview2.1.0.2365.46.nupkg.sha512"
   ],

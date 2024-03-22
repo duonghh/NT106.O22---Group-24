@@ -1,12 +1,83 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hieun\\OneDrive\\Documents\\GitHub\\NT106.O22_Group-24\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C99B257E-A4F1-4CCB-AFBA-448E1158764F}|ChatApp_Client\\ChatApp_Client.csproj|c:\\users\\hieun\\onedrive\\m\u00E1y t\u00EDnh\\coding_suck\\nt106.o22_group-24\\chatapp_client\\chatapp_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99B257E-A4F1-4CCB-AFBA-448E1158764F}|ChatApp_Client\\ChatApp_Client.csproj|solutionrelative:chatapp_client\\chatapp_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFE540D-DC1F-4CF7-BC7E-EB229A75C223}|ChatApp_Server\\ChatApp_Server.csproj|C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\chatapp_server\\chatapp_server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACFE540D-DC1F-4CF7-BC7E-EB229A75C223}|ChatApp_Server\\ChatApp_Server.csproj|solutionrelative:chatapp_server\\chatapp_server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACFE540D-DC1F-4CF7-BC7E-EB229A75C223}|ChatApp_Server\\ChatApp_Server.csproj|C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\chatapp_server\\chatapp_server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ACFE540D-DC1F-4CF7-BC7E-EB229A75C223}|ChatApp_Server\\ChatApp_Server.csproj|solutionrelative:chatapp_server\\chatapp_server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99B257E-A4F1-4CCB-AFBA-448E1158764F}|ChatApp_Client\\ChatApp_Client.csproj|C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\chatapp_client\\chatapp_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C99B257E-A4F1-4CCB-AFBA-448E1158764F}|ChatApp_Client\\ChatApp_Client.csproj|solutionrelative:chatapp_client\\chatapp_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatApp_Server.cs",
+              "DocumentMoniker": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\ChatApp_Server\\ChatApp_Server.cs",
+              "RelativeDocumentMoniker": "ChatApp_Server\\ChatApp_Server.cs",
+              "ToolTip": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\ChatApp_Server\\ChatApp_Server.cs",
+              "RelativeToolTip": "ChatApp_Server\\ChatApp_Server.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAswFwAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:35:10.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatApp_Server.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\ChatApp_Server\\ChatApp_Server.cs",
+              "RelativeDocumentMoniker": "ChatApp_Server\\ChatApp_Server.cs",
+              "ToolTip": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\ChatApp_Server\\ChatApp_Server.cs [Design]",
+              "RelativeToolTip": "ChatApp_Server\\ChatApp_Server.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:09:20.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatApp_Client.cs",
+              "DocumentMoniker": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\ChatApp_Client\\ChatApp_Client.cs",
+              "RelativeDocumentMoniker": "ChatApp_Client\\ChatApp_Client.cs",
+              "ToolTip": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\ChatApp_Client\\ChatApp_Client.cs",
+              "RelativeToolTip": "ChatApp_Client\\ChatApp_Client.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwGYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T15:52:03.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChatApp_Client.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\ChatApp_Client\\ChatApp_Client.cs",
+              "RelativeDocumentMoniker": "ChatApp_Client\\ChatApp_Client.cs",
+              "ToolTip": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\ChatApp_Client\\ChatApp_Client.cs [Design]",
+              "RelativeToolTip": "ChatApp_Client\\ChatApp_Client.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T15:39:57.735Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

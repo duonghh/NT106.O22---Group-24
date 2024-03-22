@@ -1,0 +1,17 @@
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\bin\Debug\net8.0-windows\ChatApp_Client.exe
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\bin\Debug\net8.0-windows\ChatApp_Client.deps.json
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\bin\Debug\net8.0-windows\ChatApp_Client.runtimeconfig.json
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\bin\Debug\net8.0-windows\ChatApp_Client.dll
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\bin\Debug\net8.0-windows\ChatApp_Client.pdb
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\obj\Debug\net8.0-windows\ChatApp_Client.csproj.GenerateResource.cache
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\obj\Debug\net8.0-windows\ChatApp_Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\obj\Debug\net8.0-windows\ChatApp_Client.AssemblyInfoInputs.cache
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\obj\Debug\net8.0-windows\ChatApp_Client.AssemblyInfo.cs
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\obj\Debug\net8.0-windows\ChatApp_Client.csproj.CoreCompileInputs.cache
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\obj\Debug\net8.0-windows\ChatApp_Client.sourcelink.json
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\obj\Debug\net8.0-windows\ChatApp_Client.dll
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\obj\Debug\net8.0-windows\refint\ChatApp_Client.dll
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\obj\Debug\net8.0-windows\ChatApp_Client.pdb
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\obj\Debug\net8.0-windows\ChatApp_Client.genruntimeconfig.cache
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\obj\Debug\net8.0-windows\ref\ChatApp_Client.dll
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\ChatApp_Client\obj\Debug\net8.0-windows\ChatApp_Client.ChatApp_Client.resources

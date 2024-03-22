@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ChatApp_Server/1.0.0": {
+        "runtime": {
+          "ChatApp_Server.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChatApp_Server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
