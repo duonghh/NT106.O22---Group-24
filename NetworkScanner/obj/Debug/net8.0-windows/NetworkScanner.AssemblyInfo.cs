@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Caculator")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("NetworkScanner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0ef5113e31a7072f532b7a66cef60c5b27e8ebc")]
-[assembly: System.Reflection.AssemblyProductAttribute("Caculator")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Caculator")]
+[assembly: System.Reflection.AssemblyProductAttribute("NetworkScanner")]
+[assembly: System.Reflection.AssemblyTitleAttribute("NetworkScanner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

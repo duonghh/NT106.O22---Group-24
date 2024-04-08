@@ -1,0 +1,67 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "NetworkScanner/1.0.0": {
+        "dependencies": {
+          "System.Management": "9.0.0-preview.2.24128.5"
+        },
+        "runtime": {
+          "NetworkScanner.dll": {}
+        }
+      },
+      "System.CodeDom/9.0.0-preview.2.24128.5": {
+        "runtime": {
+          "lib/net8.0/System.CodeDom.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.12805"
+          }
+        }
+      },
+      "System.Management/9.0.0-preview.2.24128.5": {
+        "dependencies": {
+          "System.CodeDom": "9.0.0-preview.2.24128.5"
+        },
+        "runtime": {
+          "lib/net8.0/System.Management.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.12805"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Management.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.12805"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NetworkScanner/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.CodeDom/9.0.0-preview.2.24128.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pZzX+icZoMvuCFpuqYmIdY6Gg5Ezyji1g7/JlZy/DsAmgZchglj8iMqkdv1++yBpsxT1uUTqSy9200LcAqVC4Q==",
+      "path": "system.codedom/9.0.0-preview.2.24128.5",
+      "hashPath": "system.codedom.9.0.0-preview.2.24128.5.nupkg.sha512"
+    },
+    "System.Management/9.0.0-preview.2.24128.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IuuZE+/KkSFg+60wwF/AwKNm4BkBQXh0AT0y1QG3TO3ijj1PG7NPSp6z7yjOxqUE5uIqpFWb4vvEUDM22SEX5g==",
+      "path": "system.management/9.0.0-preview.2.24128.5",
+      "hashPath": "system.management.9.0.0-preview.2.24128.5.nupkg.sha512"
+    }
+  }
+}

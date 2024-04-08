@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y8B+RRrB5qOjiuyNSUBJ1SNNrtBR4bBtH7XM9yODQeOLwF22Ov4pOsCV6gHh/wGP/zMo5L2UMFY4z3z3mAERkw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hieun\\OneDrive\\Máy tính\\coding_suck\\NT106.O22_Group-24\\NetworkScanner\\NetworkScanner.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hieun\\.nuget\\packages\\system.codedom\\9.0.0-preview.2.24128.5\\system.codedom.9.0.0-preview.2.24128.5.nupkg.sha512",
+    "C:\\Users\\hieun\\.nuget\\packages\\system.management\\9.0.0-preview.2.24128.5\\system.management.9.0.0-preview.2.24128.5.nupkg.sha512"
+  ],
+  "logs": []
+}
