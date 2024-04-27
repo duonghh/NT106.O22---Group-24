@@ -20,3 +20,5 @@ C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\NetworkScanner
 C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\NetworkScanner\bin\Debug\net8.0-windows\System.CodeDom.dll
 C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\NetworkScanner\bin\Debug\net8.0-windows\System.Management.dll
 C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\NetworkScanner\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.NetworkSniffer.resources
+C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.Account.resources
