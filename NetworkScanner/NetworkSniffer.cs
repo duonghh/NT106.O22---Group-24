@@ -175,11 +175,12 @@ namespace NetworkScanner
             deleteButton.Enabled = false;
         }
 
+        byte[] selectedPacketPayload;
         private void listView_SelectedIndexChanged(object sender, EventArgs e)
         {
             //getting the index of selected item
             ListView.SelectedIndexCollection indexCollection = listView.SelectedIndices;
-            if (indexCollection.Count > 0 )
+            if (indexCollection.Count > 0)
             {
                 // getting the selected packet based on index
                 int index = indexCollection[0];
@@ -227,10 +228,11 @@ namespace NetworkScanner
 
                             #region Adding payload context to the Rich Text Box control
                             richTextBox.Clear();
-                            byte[] payload = tcpPacket.Data;
-                            richTextBox.AppendText(Encoding.Default.GetString(payload)); 
+                            selectedPacketPayload = tcpPacket.Data;
+                            hexEncodeButton_Click(sender, new EventArgs());
                             #endregion
-                        } break;
+                        }
+                        break;
 
                     case "UDP":
                         {
@@ -267,12 +269,40 @@ namespace NetworkScanner
 
                             #region Adding payload context to the Rich Text Box control
                             richTextBox.Clear();
-                            byte[] payload = udpPacket.Data;
-                            richTextBox.AppendText(Encoding.Default.GetString(payload)); 
+                            selectedPacketPayload = udpPacket.Data;
+                            hexEncodeButton_Click(sender, new EventArgs());
                             #endregion
-                        } break;
+                        }
+                        break;
                 }
             }
+        }
+
+        private void asciiEncodeButton_Click(object sender, EventArgs e)
+        {
+            hexEncodeButton.Enabled = true;
+            utf8EncodeButton.Enabled = true;
+            asciiEncodeButton.Enabled = false;
+
+            richTextBox.Text = Encoding.ASCII.GetString(selectedPacketPayload);
+        }
+
+        private void hexEncodeButton_Click(object sender, EventArgs e)
+        {
+            asciiEncodeButton.Enabled = true;
+            utf8EncodeButton.Enabled = true;
+            hexEncodeButton.Enabled = false;
+
+            richTextBox.Text = BitConverter.ToString(selectedPacketPayload).Replace("-", " ").Replace(" 00", string.Empty);
+        }
+
+        private void utf8EncodeButton_Click(object sender, EventArgs e)
+        {
+            hexEncodeButton.Enabled = true;
+            asciiEncodeButton.Enabled = true;
+            utf8EncodeButton.Enabled = false;
+
+            richTextBox.Text = Encoding.UTF8.GetString(selectedPacketPayload);
         }
     }
 }

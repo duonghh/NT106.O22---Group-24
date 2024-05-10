@@ -32,7 +32,6 @@
             interfacesComboBox = new ComboBox();
             listView = new ListView();
             IPAddress = new ColumnHeader();
-            OS = new ColumnHeader();
             pingTaskProgressBar = new ProgressBar();
             findButton = new Button();
             label3 = new Label();
@@ -72,6 +71,7 @@
             // 
             interfacesComboBox.FormattingEnabled = true;
             interfacesComboBox.Location = new Point(8, 49);
+            interfacesComboBox.Margin = new Padding(3, 2, 3, 2);
             interfacesComboBox.Name = "interfacesComboBox";
             interfacesComboBox.Size = new Size(229, 29);
             interfacesComboBox.TabIndex = 1;
@@ -79,13 +79,15 @@
             // 
             // listView
             // 
-            listView.Columns.AddRange(new ColumnHeader[] { IPAddress, OS });
+            listView.Columns.AddRange(new ColumnHeader[] { IPAddress });
+            listView.Font = new Font("Segoe UI", 12F);
             listView.FullRowSelect = true;
             listView.GridLines = true;
-            listView.Location = new Point(6, 335);
+            listView.Location = new Point(6, 298);
+            listView.Margin = new Padding(3, 2, 3, 2);
             listView.MultiSelect = false;
             listView.Name = "listView";
-            listView.Size = new Size(231, 246);
+            listView.Size = new Size(232, 246);
             listView.TabIndex = 2;
             listView.UseCompatibleStateImageBehavior = false;
             listView.View = View.Details;
@@ -94,26 +96,23 @@
             // IPAddress
             // 
             IPAddress.Text = "Địa chỉ IP";
-            IPAddress.Width = 125;
-            // 
-            // OS
-            // 
-            OS.Text = "Hệ điều hành";
-            OS.Width = 200;
+            IPAddress.Width = 225;
             // 
             // pingTaskProgressBar
             // 
-            pingTaskProgressBar.Location = new Point(6, 300);
+            pingTaskProgressBar.Location = new Point(6, 263);
+            pingTaskProgressBar.Margin = new Padding(3, 2, 3, 2);
             pingTaskProgressBar.Name = "pingTaskProgressBar";
-            pingTaskProgressBar.Size = new Size(231, 29);
+            pingTaskProgressBar.Size = new Size(231, 28);
             pingTaskProgressBar.TabIndex = 3;
             // 
             // findButton
             // 
             findButton.Enabled = false;
-            findButton.Location = new Point(6, 230);
+            findButton.Location = new Point(6, 193);
+            findButton.Margin = new Padding(3, 2, 3, 2);
             findButton.Name = "findButton";
-            findButton.Size = new Size(110, 35);
+            findButton.Size = new Size(111, 35);
             findButton.TabIndex = 6;
             findButton.Text = "Bắt đầu tìm";
             findButton.UseVisualStyleBackColor = true;
@@ -122,7 +121,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(6, 87);
+            label3.Location = new Point(6, 86);
             label3.Name = "label3";
             label3.Size = new Size(74, 21);
             label3.TabIndex = 7;
@@ -131,9 +130,10 @@
             // ipAddressTextBox
             // 
             ipAddressTextBox.Location = new Point(114, 84);
+            ipAddressTextBox.Margin = new Padding(3, 2, 3, 2);
             ipAddressTextBox.Name = "ipAddressTextBox";
             ipAddressTextBox.ReadOnly = true;
-            ipAddressTextBox.Size = new Size(123, 29);
+            ipAddressTextBox.Size = new Size(124, 29);
             ipAddressTextBox.TabIndex = 8;
             // 
             // label4
@@ -148,9 +148,10 @@
             // subnetMaskTextBox
             // 
             subnetMaskTextBox.Location = new Point(114, 119);
+            subnetMaskTextBox.Margin = new Padding(3, 2, 3, 2);
             subnetMaskTextBox.Name = "subnetMaskTextBox";
             subnetMaskTextBox.ReadOnly = true;
-            subnetMaskTextBox.Size = new Size(123, 29);
+            subnetMaskTextBox.Size = new Size(124, 29);
             subnetMaskTextBox.TabIndex = 10;
             // 
             // label5
@@ -165,16 +166,18 @@
             // networkTextBox
             // 
             networkTextBox.Location = new Point(114, 154);
+            networkTextBox.Margin = new Padding(3, 2, 3, 2);
             networkTextBox.Name = "networkTextBox";
             networkTextBox.ReadOnly = true;
-            networkTextBox.Size = new Size(123, 29);
+            networkTextBox.Size = new Size(124, 29);
             networkTextBox.TabIndex = 10;
             // 
             // seletedIpAddressTextBox
             // 
             seletedIpAddressTextBox.Location = new Point(149, 22);
+            seletedIpAddressTextBox.Margin = new Padding(3, 2, 3, 2);
             seletedIpAddressTextBox.Name = "seletedIpAddressTextBox";
-            seletedIpAddressTextBox.Size = new Size(150, 29);
+            seletedIpAddressTextBox.Size = new Size(151, 29);
             seletedIpAddressTextBox.TabIndex = 8;
             seletedIpAddressTextBox.TextChanged += seletedIpAddressTextBox_TextChanged;
             // 
@@ -190,9 +193,10 @@
             // stopFindingButton
             // 
             stopFindingButton.Enabled = false;
-            stopFindingButton.Location = new Point(127, 230);
+            stopFindingButton.Location = new Point(127, 193);
+            stopFindingButton.Margin = new Padding(3, 2, 3, 2);
             stopFindingButton.Name = "stopFindingButton";
-            stopFindingButton.Size = new Size(110, 35);
+            stopFindingButton.Size = new Size(111, 35);
             stopFindingButton.TabIndex = 6;
             stopFindingButton.Text = "Dừng tìm";
             stopFindingButton.UseVisualStyleBackColor = true;
@@ -201,9 +205,9 @@
             // progessPercent
             // 
             progessPercent.BackColor = Color.Transparent;
-            progessPercent.Location = new Point(6, 268);
+            progessPercent.Location = new Point(6, 231);
             progessPercent.Name = "progessPercent";
-            progessPercent.Size = new Size(231, 29);
+            progessPercent.Size = new Size(231, 28);
             progessPercent.TabIndex = 13;
             progessPercent.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -224,15 +228,18 @@
             groupBox1.Controls.Add(ipAddressTextBox);
             groupBox1.Controls.Add(label4);
             groupBox1.Location = new Point(12, 12);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
             groupBox1.Size = new Size(243, 587);
             groupBox1.TabIndex = 14;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Tìm thiết bị";
+            groupBox1.Text = "Tìm địa chỉ cục bộ";
             // 
             // networkSnifferButton
             // 
-            networkSnifferButton.Location = new Point(6, 189);
+            networkSnifferButton.Location = new Point(6, 548);
+            networkSnifferButton.Margin = new Padding(3, 2, 3, 2);
             networkSnifferButton.Name = "networkSnifferButton";
             networkSnifferButton.Size = new Size(231, 35);
             networkSnifferButton.TabIndex = 14;
@@ -249,18 +256,22 @@
             groupBox2.Controls.Add(featureComboBox);
             groupBox2.Controls.Add(seletedIpAddressTextBox);
             groupBox2.Controls.Add(label2);
-            groupBox2.Location = new Point(272, 12);
+            groupBox2.Location = new Point(273, 12);
+            groupBox2.Margin = new Padding(3, 2, 3, 2);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(520, 587);
+            groupBox2.Padding = new Padding(3, 2, 3, 2);
+            groupBox2.Size = new Size(519, 587);
             groupBox2.TabIndex = 15;
             groupBox2.TabStop = false;
-            groupBox2.Text = "Quét mạng";
+            groupBox2.Text = "Các công cụ";
             // 
             // groupBox3
             // 
             groupBox3.Controls.Add(logRichTextBox);
-            groupBox3.Location = new Point(6, 92);
+            groupBox3.Location = new Point(6, 91);
+            groupBox3.Margin = new Padding(3, 2, 3, 2);
             groupBox3.Name = "groupBox3";
+            groupBox3.Padding = new Padding(3, 2, 3, 2);
             groupBox3.Size = new Size(508, 495);
             groupBox3.TabIndex = 12;
             groupBox3.TabStop = false;
@@ -268,7 +279,9 @@
             // 
             // logRichTextBox
             // 
+            logRichTextBox.Font = new Font("Segoe UI", 10F);
             logRichTextBox.Location = new Point(6, 27);
+            logRichTextBox.Margin = new Padding(3, 2, 3, 2);
             logRichTextBox.Name = "logRichTextBox";
             logRichTextBox.ReadOnly = true;
             logRichTextBox.Size = new Size(496, 462);
@@ -279,6 +292,7 @@
             // 
             stopButton.Enabled = false;
             stopButton.Location = new Point(411, 22);
+            stopButton.Margin = new Padding(3, 2, 3, 2);
             stopButton.Name = "stopButton";
             stopButton.Size = new Size(100, 64);
             stopButton.TabIndex = 11;
@@ -290,6 +304,7 @@
             // 
             startButton.Enabled = false;
             startButton.Location = new Point(305, 22);
+            startButton.Margin = new Padding(3, 2, 3, 2);
             startButton.Name = "startButton";
             startButton.Size = new Size(100, 64);
             startButton.TabIndex = 11;
@@ -300,7 +315,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(6, 60);
+            label6.Location = new Point(6, 61);
             label6.Name = "label6";
             label6.Size = new Size(79, 21);
             label6.TabIndex = 10;
@@ -310,8 +325,9 @@
             // 
             featureComboBox.Enabled = false;
             featureComboBox.FormattingEnabled = true;
-            featureComboBox.Items.AddRange(new object[] { "Quét cổng TCP", "Tìm thông tin (chỉ hỗ trợ Windows)" });
+            featureComboBox.Items.AddRange(new object[] { "Quét cổng TCP", "Lắng nghe thông điệp", "Mở thư mực File Sharing" });
             featureComboBox.Location = new Point(91, 57);
+            featureComboBox.Margin = new Padding(3, 2, 3, 2);
             featureComboBox.Name = "featureComboBox";
             featureComboBox.Size = new Size(208, 29);
             featureComboBox.TabIndex = 9;
@@ -368,6 +384,5 @@
         private RichTextBox logRichTextBox;
         private Button stopButton;
         private Button startButton;
-        private ColumnHeader OS;
     }
 }

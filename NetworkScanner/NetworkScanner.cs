@@ -1,3 +1,5 @@
+using NetworkScanner.Packets;
+using System.Diagnostics;
 using System.Management;
 using System.Net;
 using System.Net.NetworkInformation;
@@ -187,7 +189,7 @@ namespace NetworkScanner
             {
                 listView.Invoke(() =>
                 {
-                    listView.Items.Add(new ListViewItem(new string[] { target.ToString(), GetOSName(pingReply.Options.Ttl) }));
+                    listView.Items.Add(new ListViewItem(new string[] { target.ToString() }));
                 });
 
             }
@@ -217,23 +219,6 @@ namespace NetworkScanner
             }
         }
 
-        #region Danh sách hệ điều hành
-        private string GetOSName(int TTL)
-        {
-            switch (TTL)
-            {
-                case 64:
-                    return "Linux/MacOS/Other";
-                case 128:
-                    return "Window";
-                case 255:
-                    return "Network devices";
-                default:
-                    return "Can not identifying...";
-            }
-        }
-        #endregion
-
         private void seletedIpAddressTextBox_TextChanged(object sender, EventArgs e)
         {
             if (seletedIpAddressTextBox.Text != string.Empty)
@@ -260,10 +245,8 @@ namespace NetworkScanner
 
         CancellationTokenSource cancellationTokenSource_2;
         CancellationToken cancellationToken_2;
-        Account accountForm;
         private async void startButton_Click(object sender, EventArgs e)
         {
-            
             try
             {
                 IPAddress target = System.Net.IPAddress.Parse(seletedIpAddressTextBox.Text);
@@ -274,29 +257,32 @@ namespace NetworkScanner
                     startButton.Enabled = false;
                     stopButton.Enabled = true;
 
-                    logRichTextBox.AppendText($"\r\n---------- Quét cổng của địa chỉ {seletedIpAddressTextBox.Text} ----------\r\n");
                     Task Scan = PortScan(target);
                     await Scan;
 
                     startButton.Enabled = true;
                     stopButton.Enabled = false;
                 }
-                else if (featureComboBox.Text == "Tìm thông tin (chỉ hỗ trợ Windows)")
+                else if (featureComboBox.Text == "Lắng nghe thông điệp")
                 {
-                    accountForm = new Account();
-                    accountForm.ShowDialog();
-                    if (accountForm.IsOK == true)
+                    startButton.Enabled = false;
+                    stopButton.Enabled = true;
+
+                    Task Scan = ListenMessage(target);
+                    await Scan;
+
+                    startButton.Enabled = true;
+                    stopButton.Enabled = false;
+                }
+                else if (featureComboBox.Text == "Mở thư mực File Sharing")
+                {
+                    ProcessStartInfo startInfo = new ProcessStartInfo
                     {
-                        startButton.Enabled = false;
-                        stopButton.Enabled = true;
+                        Arguments = $"\\\\{seletedIpAddressTextBox.Text}",
+                        FileName = "explorer.exe",
+                    };
 
-                        logRichTextBox.AppendText($"\r\n---------- Tìm thông tin thiết bị của địa chỉ {seletedIpAddressTextBox.Text} ----------\r\n");
-                        Task findinfo = FindInfo(target, accountForm.username, accountForm.password);
-                        await findinfo;
-
-                        startButton.Enabled = true;
-                        stopButton.Enabled = false;
-                    }
+                    Process.Start(startInfo);
                 }
             }
             catch (Exception ex)
@@ -312,6 +298,8 @@ namespace NetworkScanner
 
         private async Task PortScan(IPAddress target)
         {
+            logRichTextBox.AppendText($"\r\n---------- Quét cổng của địa chỉ {seletedIpAddressTextBox.Text} ----------\r\n");
+
             Dictionary<int, KeyValuePair<string, string>> ListOfCommonPorts = portList();
 
             List<int> ports = ListOfCommonPorts.Keys.ToList();
@@ -335,6 +323,7 @@ namespace NetworkScanner
             }, cancellationToken_2);
             scanTask.Start();
             await scanTask;
+            logRichTextBox.AppendText($"\r\n========== Quét cổng của địa chỉ {seletedIpAddressTextBox.Text} hoàn tất! ==========\r\n");
         }
 
         #region Danh sách các cổng phổ biến
@@ -356,6 +345,7 @@ namespace NetworkScanner
             portInfo.Add(445, new KeyValuePair<string, string>("Microsoft Directory Services", "TCP/UDP"));
             portInfo.Add(993, new KeyValuePair<string, string>("IMAPS", "TCP"));
             portInfo.Add(3389, new KeyValuePair<string, string>("RDP", "TCP"));
+            portInfo.Add(8080, new KeyValuePair<string, string>("HTTP", "TCP/UDP"));
             return portInfo;
         }
         #endregion
@@ -368,7 +358,7 @@ namespace NetworkScanner
                 try
                 {
                     var result = tcpClient.BeginConnect(target, port, null, null);
-                    if (result.AsyncWaitHandle.WaitOne(TimeSpan.FromSeconds(1)))
+                    if (result.AsyncWaitHandle.WaitOne(TimeSpan.FromSeconds(2)))
                     {
                         logRichTextBox.Invoke(() =>
                         {
@@ -385,48 +375,52 @@ namespace NetworkScanner
             await Scan;
         }
 
-        private async Task FindInfo(IPAddress target, string username, string password)
+        private async Task ListenMessage(IPAddress target)
         {
-            Task Find = new Task(() =>
+            SelectInterfaceForm selectInterfaceForm = new SelectInterfaceForm();
+            selectInterfaceForm.ShowDialog();
+            if (selectInterfaceForm.selectedIPAddress == null)
             {
-                //Find system information using Win32_ComputerSystem class
-                try
+                return;
+            }
+
+            logRichTextBox.AppendText($"\r\n---------- Đang lắng nghe từ địa chỉ {seletedIpAddressTextBox.Text} ----------\r\n");
+
+            Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Raw, ProtocolType.IP);
+            socket.Bind(new IPEndPoint(selectInterfaceForm.selectedIPAddress, 0));
+            socket.SetSocketOption(SocketOptionLevel.IP, SocketOptionName.HeaderIncluded, true);
+
+            byte[] bytesIn = new byte[4] { 1, 0, 0, 0 };
+            byte[] bytesOut = new byte[4];
+            socket.IOControl(IOControlCode.ReceiveAll, bytesIn, bytesOut);
+
+            Task Listen = new Task(() =>
+            {
+                byte[] bytesBuffer = new byte[8192];
+                while(!cancellationToken_2.IsCancellationRequested)
                 {
-                    ConnectionOptions connectionOptions = new ConnectionOptions();
-                    connectionOptions.Username = username;
-                    connectionOptions.Password = password;
-                    connectionOptions.Impersonation = ImpersonationLevel.Impersonate;
+                    int bufferSize = socket.ReceiveBufferSize;
+                    int bytesReceived = socket.Receive(bytesBuffer, bytesBuffer.Length, SocketFlags.None);
 
-                    ManagementScope managementScope = new ManagementScope($"\\\\{target}\\root\\CIMV2", connectionOptions);
-                    managementScope.Options.EnablePrivileges = true;
-
-                    ObjectQuery query = new ObjectQuery("SELECT * FROM Win32_ComputerSystem");
-                    ManagementObjectSearcher searcher = new ManagementObjectSearcher(managementScope, query);
-                    ManagementObjectCollection queryCollection = searcher.Get();
-                    foreach (ManagementObject managementObject in queryCollection)
+                    if (bytesReceived > 0)
                     {
-                        logRichTextBox.Invoke(() =>
+                        //getting IP header and data information
+                        IPPacket ipPacket = new IPPacket(bytesBuffer, bytesReceived);
+                        if (ipPacket.SourceAddress.Equals(target))
                         {
-                            string[] properties = { "Domain", "Model", "Name", "PrimaryOwnerName", "TotalPhysicalMemory" };
-                            foreach (string property in properties)
+                            byte[] message = ipPacket.Data;
+                            logRichTextBox.Invoke(() =>
                             {
-                                logRichTextBox.AppendText($"\r\n{property}: {managementObject[property]}\r\n");
-                            }
-                        });
-                        break;
+                                logRichTextBox.AppendText($"\r\nTừ {target}: {Encoding.UTF8.GetString(message)}\r\n");
+                            });
+                        }
                     }
                 }
-                catch (Exception ex)
-                {
-                    logRichTextBox.Invoke(() =>
-                    {
-                        logRichTextBox.AppendText("\r\nCould not retrieve information\r\n");
-                        logRichTextBox.AppendText($"Error: {ex.Message}\r\n");
-                    });
-                }
-            });
-            Find.Start();
-            await Find;
+
+            }, cancellationToken_2);
+            Listen.Start();
+            await Listen;
+            logRichTextBox.AppendText($"\r\n========== Kết thúc lắng nghe! ==========\r\n");
         }
 
         private void networkSnifferButton_Click(object sender, EventArgs e)
