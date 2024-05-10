@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetworkScanner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7b49ff7285c7f9bad72a260ecfeb3110755e1f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38346b194fa6a9c5e226ebdda5965a465195c408")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetworkScanner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetworkScanner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
