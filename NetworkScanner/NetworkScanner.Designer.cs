@@ -325,7 +325,7 @@
             // 
             featureComboBox.Enabled = false;
             featureComboBox.FormattingEnabled = true;
-            featureComboBox.Items.AddRange(new object[] { "Quét cổng TCP", "Lắng nghe thông điệp", "Mở thư mực File Sharing" });
+            featureComboBox.Items.AddRange(new object[] { "Quét cổng TCP", "Kiểm tra tốc độ kết nối", "Lắng nghe thông điệp", "Mở thư mực File Sharing" });
             featureComboBox.Location = new Point(91, 57);
             featureComboBox.Margin = new Padding(3, 2, 3, 2);
             featureComboBox.Name = "featureComboBox";
