@@ -263,6 +263,11 @@ namespace NetworkScanner
                     startButton.Enabled = true;
                     stopButton.Enabled = false;
                 }
+                else if (featureComboBox.Text == "Kiểm tra tốc độ phản hồi")
+                {
+                    Task Check = CheckResponseSpeed(target);
+                    await Check;
+                }
                 else if (featureComboBox.Text == "Lắng nghe thông điệp")
                 {
                     startButton.Enabled = false;
@@ -373,6 +378,28 @@ namespace NetworkScanner
             });
             Scan.Start();
             await Scan;
+        }
+
+        private async Task CheckResponseSpeed(IPAddress target)
+        {
+            try
+            {
+                Ping ping = new Ping();
+                PingReply pingReply = await ping.SendPingAsync(target);
+
+                if (pingReply.Status == IPStatus.Success)
+                {
+                    logRichTextBox.AppendText($"Ping time: {pingReply.RoundtripTime} ms\r\n");
+                }
+                else
+                {
+                    logRichTextBox.AppendText($"Ping failed\r\n");
+                }
+            } catch (Exception ex) 
+            {
+                logRichTextBox.AppendText($"Unable to ping!\r\n");
+                logRichTextBox.AppendText($"Error: {ex.Message}");
+            }
         }
 
         private async Task ListenMessage(IPAddress target)
