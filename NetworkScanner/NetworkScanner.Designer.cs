@@ -63,7 +63,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(8, 25);
             label1.Name = "label1";
-            label1.Size = new Size(159, 21);
+            label1.Size = new Size(200, 28);
             label1.TabIndex = 0;
             label1.Text = "Chọn giao diện mạng";
             // 
@@ -73,7 +73,7 @@
             interfacesComboBox.Location = new Point(8, 49);
             interfacesComboBox.Margin = new Padding(3, 2, 3, 2);
             interfacesComboBox.Name = "interfacesComboBox";
-            interfacesComboBox.Size = new Size(229, 29);
+            interfacesComboBox.Size = new Size(229, 36);
             interfacesComboBox.TabIndex = 1;
             interfacesComboBox.SelectedIndexChanged += interfacesComboBox_SelectedIndexChanged;
             // 
@@ -123,7 +123,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(6, 86);
             label3.Name = "label3";
-            label3.Size = new Size(74, 21);
+            label3.Size = new Size(92, 28);
             label3.TabIndex = 7;
             label3.Text = "Địa chỉ IP";
             // 
@@ -133,7 +133,7 @@
             ipAddressTextBox.Margin = new Padding(3, 2, 3, 2);
             ipAddressTextBox.Name = "ipAddressTextBox";
             ipAddressTextBox.ReadOnly = true;
-            ipAddressTextBox.Size = new Size(124, 29);
+            ipAddressTextBox.Size = new Size(124, 34);
             ipAddressTextBox.TabIndex = 8;
             // 
             // label4
@@ -141,7 +141,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(8, 122);
             label4.Name = "label4";
-            label4.Size = new Size(100, 21);
+            label4.Size = new Size(125, 28);
             label4.TabIndex = 9;
             label4.Text = "Subnet Mask";
             // 
@@ -151,7 +151,7 @@
             subnetMaskTextBox.Margin = new Padding(3, 2, 3, 2);
             subnetMaskTextBox.Name = "subnetMaskTextBox";
             subnetMaskTextBox.ReadOnly = true;
-            subnetMaskTextBox.Size = new Size(124, 29);
+            subnetMaskTextBox.Size = new Size(124, 34);
             subnetMaskTextBox.TabIndex = 10;
             // 
             // label5
@@ -159,7 +159,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(8, 157);
             label5.Name = "label5";
-            label5.Size = new Size(101, 21);
+            label5.Size = new Size(126, 28);
             label5.TabIndex = 11;
             label5.Text = "Địa chỉ mạng";
             // 
@@ -169,7 +169,7 @@
             networkTextBox.Margin = new Padding(3, 2, 3, 2);
             networkTextBox.Name = "networkTextBox";
             networkTextBox.ReadOnly = true;
-            networkTextBox.Size = new Size(124, 29);
+            networkTextBox.Size = new Size(124, 34);
             networkTextBox.TabIndex = 10;
             // 
             // seletedIpAddressTextBox
@@ -177,7 +177,7 @@
             seletedIpAddressTextBox.Location = new Point(149, 22);
             seletedIpAddressTextBox.Margin = new Padding(3, 2, 3, 2);
             seletedIpAddressTextBox.Name = "seletedIpAddressTextBox";
-            seletedIpAddressTextBox.Size = new Size(151, 29);
+            seletedIpAddressTextBox.Size = new Size(151, 34);
             seletedIpAddressTextBox.TabIndex = 8;
             seletedIpAddressTextBox.TextChanged += seletedIpAddressTextBox_TextChanged;
             // 
@@ -186,7 +186,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(6, 25);
             label2.Name = "label2";
-            label2.Size = new Size(137, 21);
+            label2.Size = new Size(172, 28);
             label2.TabIndex = 7;
             label2.Text = "Địa chỉ IP cần quét";
             // 
@@ -264,6 +264,7 @@
             groupBox2.TabIndex = 15;
             groupBox2.TabStop = false;
             groupBox2.Text = "Các công cụ";
+            groupBox2.Enter += groupBox2_Enter;
             // 
             // groupBox3
             // 
@@ -317,7 +318,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(6, 61);
             label6.Name = "label6";
-            label6.Size = new Size(79, 21);
+            label6.Size = new Size(98, 28);
             label6.TabIndex = 10;
             label6.Text = "Tính năng";
             // 
@@ -325,17 +326,21 @@
             // 
             featureComboBox.Enabled = false;
             featureComboBox.FormattingEnabled = true;
+<<<<<<< HEAD
             featureComboBox.Items.AddRange(new object[] { "Quét cổng TCP", "Kiểm tra tốc độ phản hồi", "Lắng nghe thông điệp", "Mở thư mực File Sharing" });
+=======
+            featureComboBox.Items.AddRange(new object[] { "Quét cổng TCP", "Kiểm tra tốc độ mạng", "Lắng nghe thông điệp", "Mở thư mực File Sharing" });
+>>>>>>> origin/NetworkScannerProject
             featureComboBox.Location = new Point(91, 57);
             featureComboBox.Margin = new Padding(3, 2, 3, 2);
             featureComboBox.Name = "featureComboBox";
-            featureComboBox.Size = new Size(208, 29);
+            featureComboBox.Size = new Size(208, 36);
             featureComboBox.TabIndex = 9;
             featureComboBox.SelectedIndexChanged += featureComboBox_SelectedIndexChanged;
             // 
             // NetworkScanner
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(804, 611);
             Controls.Add(groupBox2);

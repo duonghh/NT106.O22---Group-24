@@ -1,13 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\",
+  "WorkspaceRootPath": "C:\\Users\\dinhk\\source\\repos4\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{155346F2-3789-4D45-8CF8-82284924F28C}|NetworkScanner\\NetworkScanner.csproj|c:\\users\\hieun\\onedrive\\m\u00E1y t\u00EDnh\\coding_suck\\nt106.o22_group-24\\networkscanner\\networkscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{155346F2-3789-4D45-8CF8-82284924F28C}|NetworkScanner\\NetworkScanner.csproj|solutionrelative:networkscanner\\networkscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{155346F2-3789-4D45-8CF8-82284924F28C}|NetworkScanner\\NetworkScanner.csproj|c:\\users\\hieun\\onedrive\\m\u00E1y t\u00EDnh\\coding_suck\\nt106.o22_group-24\\networkscanner\\networkscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+=======
+      "AbsoluteMoniker": "D:0:0:{155346F2-3789-4D45-8CF8-82284924F28C}|NetworkScanner\\NetworkScanner.csproj|c:\\users\\dinhk\\source\\repos4\\networkscanner\\networkscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{155346F2-3789-4D45-8CF8-82284924F28C}|NetworkScanner\\NetworkScanner.csproj|solutionrelative:networkscanner\\networkscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{155346F2-3789-4D45-8CF8-82284924F28C}|NetworkScanner\\NetworkScanner.csproj|C:\\Users\\dinhk\\source\\repos4\\networkscanner\\networkscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+>>>>>>> origin/NetworkScannerProject
       "RelativeMoniker": "D:0:0:{155346F2-3789-4D45-8CF8-82284924F28C}|NetworkScanner\\NetworkScanner.csproj|solutionrelative:networkscanner\\networkscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -24,6 +32,7 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "NetworkScanner.cs",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\NetworkScanner\\NetworkScanner.cs",
               "RelativeDocumentMoniker": "NetworkScanner\\NetworkScanner.cs",
               "ToolTip": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\NetworkScanner\\NetworkScanner.cs",
@@ -31,18 +40,31 @@
               "ViewState": "AQIAAPcAAAAAAAAAAAAkwAwBAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T10:23:51.229Z",
+=======
+              "DocumentMoniker": "C:\\Users\\dinhk\\source\\repos4\\NetworkScanner\\NetworkScanner.cs",
+              "RelativeDocumentMoniker": "NetworkScanner\\NetworkScanner.cs",
+              "ToolTip": "C:\\Users\\dinhk\\source\\repos4\\NetworkScanner\\NetworkScanner.cs*",
+              "RelativeToolTip": "NetworkScanner\\NetworkScanner.cs*",
+              "ViewState": "AQIAALUBAAAAAAAAAAAAAMABAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T08:56:23.477Z",
+>>>>>>> origin/NetworkScannerProject
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "NetworkScanner.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\NetworkScanner\\NetworkScanner.cs",
+              "DocumentMoniker": "C:\\Users\\dinhk\\source\\repos4\\NetworkScanner\\NetworkScanner.cs",
               "RelativeDocumentMoniker": "NetworkScanner\\NetworkScanner.cs",
-              "ToolTip": "C:\\Users\\hieun\\OneDrive\\M\u00E1y t\u00EDnh\\coding_suck\\NT106.O22_Group-24\\NetworkScanner\\NetworkScanner.cs [Design]",
-              "RelativeToolTip": "NetworkScanner\\NetworkScanner.cs [Design]",
+              "ToolTip": "C:\\Users\\dinhk\\source\\repos4\\NetworkScanner\\NetworkScanner.cs [Design]*",
+              "RelativeToolTip": "NetworkScanner\\NetworkScanner.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2024-05-10T10:22:56.463Z",
+=======
+              "WhenOpened": "2024-05-10T08:56:01.65Z",
+>>>>>>> origin/NetworkScannerProject
               "EditorCaption": " [Design]"
             }
           ]

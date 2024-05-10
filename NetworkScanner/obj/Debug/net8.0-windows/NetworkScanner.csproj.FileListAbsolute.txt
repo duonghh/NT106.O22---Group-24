@@ -22,3 +22,27 @@ C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\NetworkScanner
 C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\NetworkScanner\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
 C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.NetworkSniffer.resources
 C:\Users\hieun\OneDrive\Máy tính\coding_suck\NT106.O22_Group-24\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.SelectInterfaceForm.resources
+C:\Users\dinhk\source\repos4\NetworkScanner\bin\Debug\net8.0-windows\NetworkScanner.exe
+C:\Users\dinhk\source\repos4\NetworkScanner\bin\Debug\net8.0-windows\NetworkScanner.deps.json
+C:\Users\dinhk\source\repos4\NetworkScanner\bin\Debug\net8.0-windows\NetworkScanner.runtimeconfig.json
+C:\Users\dinhk\source\repos4\NetworkScanner\bin\Debug\net8.0-windows\NetworkScanner.dll
+C:\Users\dinhk\source\repos4\NetworkScanner\bin\Debug\net8.0-windows\NetworkScanner.pdb
+C:\Users\dinhk\source\repos4\NetworkScanner\bin\Debug\net8.0-windows\System.CodeDom.dll
+C:\Users\dinhk\source\repos4\NetworkScanner\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\dinhk\source\repos4\NetworkScanner\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.csproj.AssemblyReference.cache
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.NetworkScanner.resources
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.NetworkSniffer.resources
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.SelectInterfaceForm.resources
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.csproj.GenerateResource.cache
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.AssemblyInfoInputs.cache
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.AssemblyInfo.cs
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.csproj.CoreCompileInputs.cache
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.sourcelink.json
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkS.3514B391.Up2Date
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.dll
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\refint\NetworkScanner.dll
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.pdb
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\NetworkScanner.genruntimeconfig.cache
+C:\Users\dinhk\source\repos4\NetworkScanner\obj\Debug\net8.0-windows\ref\NetworkScanner.dll

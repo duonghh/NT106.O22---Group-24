@@ -263,10 +263,23 @@ namespace NetworkScanner
                     startButton.Enabled = true;
                     stopButton.Enabled = false;
                 }
+<<<<<<< HEAD
                 else if (featureComboBox.Text == "Kiểm tra tốc độ phản hồi")
                 {
                     Task Check = CheckResponseSpeed(target);
                     await Check;
+=======
+                else if (featureComboBox.Text == "Kiểm tra tốc độ mạng")
+                {
+                    startButton.Enabled = false;
+                    stopButton.Enabled = true;
+
+                    Task Scan = CheckNetworkSpeed(target);
+                    await Scan;
+
+                    startButton.Enabled = true;
+                    stopButton.Enabled = false;
+>>>>>>> origin/NetworkScannerProject
                 }
                 else if (featureComboBox.Text == "Lắng nghe thông điệp")
                 {
@@ -321,7 +334,7 @@ namespace NetworkScanner
                     KeyValuePair<string, string> keyValuePair = ListOfCommonPorts[port];
                     string service = keyValuePair.Key;
                     string protocol = keyValuePair.Value;
-                    
+
                     portScanTasks.Add(TcpPortScan(target, port, service, protocol));
                 }
                 Task.WaitAll(portScanTasks.ToArray());
@@ -424,7 +437,7 @@ namespace NetworkScanner
             Task Listen = new Task(() =>
             {
                 byte[] bytesBuffer = new byte[8192];
-                while(!cancellationToken_2.IsCancellationRequested)
+                while (!cancellationToken_2.IsCancellationRequested)
                 {
                     int bufferSize = socket.ReceiveBufferSize;
                     int bytesReceived = socket.Receive(bytesBuffer, bytesBuffer.Length, SocketFlags.None);
@@ -450,10 +463,48 @@ namespace NetworkScanner
             logRichTextBox.AppendText($"\r\n========== Kết thúc lắng nghe! ==========\r\n");
         }
 
+        private async Task CheckNetworkSpeed(IPAddress target)
+        {
+            try
+            {
+                // Ping đến địa chỉ IP mục tiêu để đo tốc độ mạng
+                Ping myPing = new Ping();
+                PingReply reply = myPing.Send(target);
+
+                if (reply.Status == IPStatus.Success)
+                {
+                    logRichTextBox.Invoke(() =>
+                    {
+                        logRichTextBox.AppendText($"\r\nPing time: {reply.RoundtripTime} ms\r\n");
+                    });
+                }
+                else
+                {
+                    logRichTextBox.Invoke(() =>
+                    {
+                        logRichTextBox.AppendText($"\r\nPing failed\r\n");
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                logRichTextBox.Invoke(() =>
+                {
+                    logRichTextBox.AppendText("\r\nCould not check network speed\r\n");
+                    logRichTextBox.AppendText($"Error: {ex.Message}\r\n");
+                });
+            }
+        }
+
         private void networkSnifferButton_Click(object sender, EventArgs e)
         {
             NetworkSniffer networkSniffer = new NetworkSniffer();
             networkSniffer.Show();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
