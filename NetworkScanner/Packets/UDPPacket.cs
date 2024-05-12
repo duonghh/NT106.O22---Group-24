@@ -7,37 +7,17 @@ using System.Threading.Tasks;
 
 namespace NetworkScanner.Packets
 {
-    /// <summary>
-    /// This class contains UDP header structure
-    /// 
-    /// The User Datagram Protocol (UDP), defined by IETF RFC768, 
-    /// provides a simple, but unreliable message service for transaction-oriented services. 
-    /// Each UDP header carries both a source port identifier and destination port identifier, 
-    /// allowing high-level protocols to target specific applications and services among hosts.
-    /// 
-    /// </summary>
-    /// 
-
     public class UDPPacket
     {
-        private ushort _usSourcePort;           // 16 bits for source port  
-        private ushort _usDestinationPort;      // 16 bits for destination port
-        private ushort _usLength;               // 16 bits for lenght(in octets)
-        private short _sChecksum;               // 16 bits for checksum
+        private ushort _usSourcePort;               // 16 bits for source port  
+        private ushort _usDestinationPort;          // 16 bits for destination port
+        private ushort _usLength;                   // 16 bits for lenght(in octets)
+        private short _sChecksum;                   // 16 bits for checksum
+        private byte[] _bUDPData = new byte[4096];  // Buffer for data carried by UDP datagram
 
-
-        // Buffer for data carried by UDP datagram
-        private byte[] _bUDPData = new byte[4096];
-
-        /// <summary>
-        /// Constructor wich takes 2 argument first argument is UDP packet data including header
-        /// second argument bytes number 
-        /// </summary>
-        /// <param name="byBuffer"></param>
-        /// <param name="nReceived"></param>
         public UDPPacket(byte[] byBuffer, int nReceived)
         {
-            // Preparing for data reading from UDO packets
+            // Preparing for data reading from UDP packets
             MemoryStream memoryStream = null;
             BinaryReader binaryReader = null;
 

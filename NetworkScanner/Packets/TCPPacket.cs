@@ -7,18 +7,8 @@ using System.Threading.Tasks;
 
 namespace NetworkScanner.Packets
 {
-    internal class TCPPacket
+    public class TCPPacket
     {
-        /// <summary>
-        ///  TCP header structure
-        /// 
-        /// IETF RFC793 defines the Transmission Control Protocol (TCP). 
-        /// TCP provides a reliable stream delivery and virtual connection service 
-        /// to applications through the use of sequenced acknowledgment with 
-        /// retransmission of packets when necessary.
-        /// 
-        /// </summary>
-        /// 
         private ushort _usSourcePort;         //16 bits for source port         
         private ushort _usDestinationPort;    //16 bits for destination port   
         private uint _uiSequenceNumber;     //32 bits for sequence number   

@@ -90,7 +90,6 @@ namespace NetworkScanner
                 byte[] bytesBuffer = new byte[8192];
                 while (!cancellationToken.IsCancellationRequested)
                 {
-                    int bufferSize = socket.ReceiveBufferSize;
                     int bytesReceived = socket.Receive(bytesBuffer, bytesBuffer.Length, SocketFlags.None);
 
                     if (bytesReceived > 0)
@@ -111,7 +110,7 @@ namespace NetworkScanner
                                     //and assigning all TCP fields
                                     TCPPacket tcpPacket = new TCPPacket(ipPacket.Data, ipPacket.MessageLength);
 
-                                    // Fill the list view control
+                                    #region Fill the list view control
                                     listView.Invoke(() =>
                                     {
                                         ListViewItem item = new ListViewItem(new string[]
@@ -125,8 +124,9 @@ namespace NetworkScanner
                                             ipPacket.Protocol,
                                             ipPacket.TotalLength
                                         });
-                                        listView.Items.Add(item);
-                                    });
+                                    listView.Items.Add(item);
+                                    }); 
+                                    #endregion
                                 }
                                 break;
 
@@ -140,7 +140,7 @@ namespace NetworkScanner
                                     //and assigning all TCP fields
                                     UDPPacket udpPacket = new UDPPacket(ipPacket.Data, ipPacket.MessageLength);
 
-                                    // Fill the list view control
+                                    #region Fill the list view control
                                     listView.Invoke(() =>
                                     {
                                         ListViewItem item = new ListViewItem(new string[]
@@ -154,8 +154,9 @@ namespace NetworkScanner
                                             ipPacket.Protocol,
                                             ipPacket.TotalLength
                                         });
-                                        listView.Items.Add(item);
-                                    });
+                                    listView.Items.Add(item);
+                                    }); 
+                                    #endregion
                                 }
 
                                 break;

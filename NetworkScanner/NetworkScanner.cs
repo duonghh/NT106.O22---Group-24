@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Text;
+using System.Windows.Forms;
 
 namespace NetworkScanner
 {
@@ -129,13 +130,14 @@ namespace NetworkScanner
             }
             #endregion
 
-            // Tính toán thanh trạng thái
+            #region Tính toán thanh trạng thái
             pingTaskProgressBar.Value = 0;
-            pingTaskProgressBar.Maximum = (broadcastAddress[0] - networkAddress[0] + 1) * (broadcastAddress[1] - networkAddress[1] + 1) * (broadcastAddress[2] - networkAddress[2] + 1) * (broadcastAddress[3] - networkAddress[3] + 1);
+            pingTaskProgressBar.Maximum = (broadcastAddress[0] - networkAddress[0] + 1) * (broadcastAddress[1] - networkAddress[1] + 1) * (broadcastAddress[2] - networkAddress[2] + 1) * (broadcastAddress[3] - networkAddress[3] + 1); 
+            #endregion
 
             Task pingEachIpAddress = new Task(async () =>
             {
-                // Tạo ra danh sách Task
+                // Tạo ra danh sách Task ping
                 List<Task> pingTasks = new List<Task>();
 
                 for (int i = networkAddress[0]; i <= broadcastAddress[0]; i++)
@@ -161,11 +163,8 @@ namespace NetworkScanner
                         }
                     }
                 }
-
                 // Chờ tất cả các pingTask được hoàn tất
                 Task.WaitAll(pingTasks.ToArray());
-
-
             }, cancellationToken_1);
             pingEachIpAddress.Start();
             await pingEachIpAddress;
@@ -173,11 +172,12 @@ namespace NetworkScanner
 
         private async Task pingTask(IPAddress target)
         {
-            // Kiểm tra có token huỷ hay không
+            #region Kiểm tra có token huỷ hay không
             if (cancellationToken_1.IsCancellationRequested)
             {
                 return;
-            }
+            } 
+            #endregion
 
             // Ping đến IP mục tiêu
             Ping myPing = new Ping();
@@ -194,7 +194,7 @@ namespace NetworkScanner
 
             }
 
-            // Cập nhật thanh quá trình
+            #region Cập nhật thanh quá trình
             int progressMaxValue = 0;
             int progressCurrentValue = 0;
             pingTaskProgressBar.Invoke(() =>
@@ -203,20 +203,22 @@ namespace NetworkScanner
                 progressMaxValue = pingTaskProgressBar.Maximum;
                 progressCurrentValue = pingTaskProgressBar.Value;
             });
+            #endregion
 
-            // Cập nhật tiến độ
+            #region Cập nhật trạng thái tiến độ
             progessPercent.Invoke(() =>
-            {
-                double percent = (double)progressCurrentValue / (double)progressMaxValue * 100;
-                progessPercent.Text = $"{Math.Round(percent, 2)}%";
-            });
+                {
+                    double percent = (double)progressCurrentValue / (double)progressMaxValue * 100;
+                    progessPercent.Text = $"{Math.Round(percent, 2)}%";
+                });
             if (cancellationToken_1.IsCancellationRequested)
             {
                 progessPercent.Invoke(() =>
                 {
                     progessPercent.Text = string.Empty;
                 });
-            }
+            } 
+            #endregion
         }
 
         private void seletedIpAddressTextBox_TextChanged(object sender, EventArgs e)
@@ -305,8 +307,7 @@ namespace NetworkScanner
         {
             logRichTextBox.AppendText($"\r\n---------- Quét cổng của địa chỉ {seletedIpAddressTextBox.Text} ----------\r\n");
 
-            Dictionary<int, KeyValuePair<string, string>> ListOfCommonPorts = portList();
-
+            Dictionary<int, KeyValuePair<string, string>> ListOfCommonPorts = CreatePortList();
             List<int> ports = ListOfCommonPorts.Keys.ToList();
 
             Task scanTask = new Task(() =>
@@ -332,7 +333,7 @@ namespace NetworkScanner
         }
 
         #region Danh sách các cổng phổ biến
-        private Dictionary<int, KeyValuePair<string, string>> portList()
+        private Dictionary<int, KeyValuePair<string, string>> CreatePortList()
         {
             Dictionary<int, KeyValuePair<string, string>> portInfo = new Dictionary<int, KeyValuePair<string, string>>();
             portInfo.Add(20, new KeyValuePair<string, string>("FTP data transfer", "TCP/UDP"));
@@ -418,10 +419,10 @@ namespace NetworkScanner
 
             Task Listen = new Task(() =>
             {
-                byte[] bytesBuffer = new byte[8192];
                 while(!cancellationToken_2.IsCancellationRequested)
                 {
                     int bufferSize = socket.ReceiveBufferSize;
+                    byte[] bytesBuffer = new byte[bufferSize];
                     int bytesReceived = socket.Receive(bytesBuffer, bytesBuffer.Length, SocketFlags.None);
 
                     if (bytesReceived > 0)
@@ -430,7 +431,22 @@ namespace NetworkScanner
                         IPPacket ipPacket = new IPPacket(bytesBuffer, bytesReceived);
                         if (ipPacket.SourceAddress.Equals(target))
                         {
-                            byte[] message = ipPacket.Data;
+                            byte[] message = new byte[8192];
+                            if (ipPacket.Protocol == "TCP")
+                            {
+                                TCPPacket tcpPacket = new TCPPacket(ipPacket.Data, ipPacket.MessageLength);
+                                message = tcpPacket.Data;
+                            }
+                            else if (ipPacket.Protocol == "UDP")
+                            {
+                                UDPPacket udpPacket = new UDPPacket(ipPacket.Data, ipPacket.MessageLength);
+                                message= udpPacket.Data;
+                            }
+                            else
+                            {
+                                message = ipPacket.Data;
+                            }
+                            
                             logRichTextBox.Invoke(() =>
                             {
                                 logRichTextBox.AppendText($"\r\nTừ {target}: {Encoding.UTF8.GetString(message)}\r\n");

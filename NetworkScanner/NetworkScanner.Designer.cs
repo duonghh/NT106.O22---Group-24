@@ -87,7 +87,7 @@
             listView.Margin = new Padding(3, 2, 3, 2);
             listView.MultiSelect = false;
             listView.Name = "listView";
-            listView.Size = new Size(232, 246);
+            listView.Size = new Size(232, 248);
             listView.TabIndex = 2;
             listView.UseCompatibleStateImageBehavior = false;
             listView.View = View.Details;
@@ -174,10 +174,10 @@
             // 
             // seletedIpAddressTextBox
             // 
-            seletedIpAddressTextBox.Location = new Point(149, 22);
+            seletedIpAddressTextBox.Location = new Point(150, 22);
             seletedIpAddressTextBox.Margin = new Padding(3, 2, 3, 2);
             seletedIpAddressTextBox.Name = "seletedIpAddressTextBox";
-            seletedIpAddressTextBox.Size = new Size(151, 29);
+            seletedIpAddressTextBox.Size = new Size(150, 29);
             seletedIpAddressTextBox.TabIndex = 8;
             seletedIpAddressTextBox.TextChanged += seletedIpAddressTextBox_TextChanged;
             // 
@@ -186,9 +186,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(6, 25);
             label2.Name = "label2";
-            label2.Size = new Size(137, 21);
+            label2.Size = new Size(138, 21);
             label2.TabIndex = 7;
-            label2.Text = "Địa chỉ IP cần quét";
+            label2.Text = "Địa chỉ IP mục tiêu";
             // 
             // stopFindingButton
             // 
@@ -213,7 +213,6 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(networkSnifferButton);
             groupBox1.Controls.Add(listView);
             groupBox1.Controls.Add(progessPercent);
             groupBox1.Controls.Add(label1);
@@ -231,14 +230,14 @@
             groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(3, 2, 3, 2);
-            groupBox1.Size = new Size(243, 587);
+            groupBox1.Size = new Size(243, 550);
             groupBox1.TabIndex = 14;
             groupBox1.TabStop = false;
             groupBox1.Text = "Tìm địa chỉ cục bộ";
             // 
             // networkSnifferButton
             // 
-            networkSnifferButton.Location = new Point(6, 548);
+            networkSnifferButton.Location = new Point(18, 566);
             networkSnifferButton.Margin = new Padding(3, 2, 3, 2);
             networkSnifferButton.Name = "networkSnifferButton";
             networkSnifferButton.Size = new Size(231, 35);
@@ -338,6 +337,7 @@
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(804, 611);
+            Controls.Add(networkSnifferButton);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);

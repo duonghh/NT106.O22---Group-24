@@ -165,11 +165,6 @@ namespace NetworkScanner.Packets
                     return "TCP";
                 else if (_bProtocol == 17)
                     return "UDP";
-                else if (_bProtocol == 1)
-                    return "ICMP";
-                else if (_bProtocol == 2)
-                    return "IGMP";
-
                 else
                 {
                     return "Unknown";
