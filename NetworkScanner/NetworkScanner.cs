@@ -364,8 +364,9 @@ namespace NetworkScanner
                 try
                 {
                     var result = tcpClient.BeginConnect(target, port, null, null);
-                    if (result.AsyncWaitHandle.WaitOne(TimeSpan.FromSeconds(2)))
+                    if (result.AsyncWaitHandle.WaitOne(2000))
                     {
+                        tcpClient.Close();
                         logRichTextBox.Invoke(() =>
                         {
                             logRichTextBox.AppendText($"\r\nCổng: {port}\r\nGiao thức: {protocol}\r\nDịch vụ: {service}\r\n");
@@ -413,7 +414,7 @@ namespace NetworkScanner
             socket.Bind(new IPEndPoint(selectInterfaceForm.selectedIPAddress, 0));
             socket.SetSocketOption(SocketOptionLevel.IP, SocketOptionName.HeaderIncluded, true);
 
-            byte[] bytesIn = new byte[4] { 1, 0, 0, 0 };
+            byte[] bytesIn = new byte[4] {1, 0, 0, 0};
             byte[] bytesOut = new byte[4];
             socket.IOControl(IOControlCode.ReceiveAll, bytesIn, bytesOut);
 
@@ -446,10 +447,11 @@ namespace NetworkScanner
                             {
                                 message = ipPacket.Data;
                             }
-                            
+
+                            string hexString = BitConverter.ToString(message).Replace("-", "").Replace("00", string.Empty);
                             logRichTextBox.Invoke(() =>
                             {
-                                logRichTextBox.AppendText($"\r\nTừ {target}: {Encoding.UTF8.GetString(message)}\r\n");
+                                logRichTextBox.AppendText($"\r\nTừ {target}: {HexToString(hexString)}\r\n");
                             });
                         }
                     }
@@ -459,6 +461,19 @@ namespace NetworkScanner
             Listen.Start();
             await Listen;
             logRichTextBox.AppendText($"\r\n========== Kết thúc lắng nghe! ==========\r\n");
+        }
+
+        private string HexToString(string hexString)
+        {
+            StringBuilder stringBuilder = new StringBuilder(hexString.Length / 2);
+
+            for (int i = 0; i < hexString.Length; i += 2)
+            {
+                string hexPair = hexString.Substring(i, 2);
+                byte byteValue = byte.Parse(hexPair, System.Globalization.NumberStyles.HexNumber);
+                stringBuilder.Append((char)byteValue);
+            }
+            return stringBuilder.ToString();
         }
 
         private void networkSnifferButton_Click(object sender, EventArgs e)

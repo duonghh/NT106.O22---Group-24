@@ -45,8 +45,7 @@
             PacketSize = new ColumnHeader();
             treeView = new TreeView();
             groupBox1 = new GroupBox();
-            asciiEncodeButton = new Button();
-            utf8EncodeButton = new Button();
+            textEncodeButton = new Button();
             hexEncodeButton = new Button();
             richTextBox = new RichTextBox();
             deleteButton = new Button();
@@ -174,8 +173,7 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(asciiEncodeButton);
-            groupBox1.Controls.Add(utf8EncodeButton);
+            groupBox1.Controls.Add(textEncodeButton);
             groupBox1.Controls.Add(hexEncodeButton);
             groupBox1.Controls.Add(richTextBox);
             groupBox1.Location = new Point(468, 402);
@@ -185,27 +183,16 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Payload";
             // 
-            // asciiEncodeButton
+            // textEncodeButton
             // 
-            asciiEncodeButton.Font = new Font("Segoe UI", 9F);
-            asciiEncodeButton.Location = new Point(87, 221);
-            asciiEncodeButton.Name = "asciiEncodeButton";
-            asciiEncodeButton.Size = new Size(75, 23);
-            asciiEncodeButton.TabIndex = 1;
-            asciiEncodeButton.Text = "ASCII";
-            asciiEncodeButton.UseVisualStyleBackColor = true;
-            asciiEncodeButton.Click += asciiEncodeButton_Click;
-            // 
-            // utf8EncodeButton
-            // 
-            utf8EncodeButton.Font = new Font("Segoe UI", 9F);
-            utf8EncodeButton.Location = new Point(168, 221);
-            utf8EncodeButton.Name = "utf8EncodeButton";
-            utf8EncodeButton.Size = new Size(75, 23);
-            utf8EncodeButton.TabIndex = 1;
-            utf8EncodeButton.Text = "UTF8";
-            utf8EncodeButton.UseVisualStyleBackColor = true;
-            utf8EncodeButton.Click += utf8EncodeButton_Click;
+            textEncodeButton.Font = new Font("Segoe UI", 9F);
+            textEncodeButton.Location = new Point(87, 221);
+            textEncodeButton.Name = "textEncodeButton";
+            textEncodeButton.Size = new Size(75, 23);
+            textEncodeButton.TabIndex = 1;
+            textEncodeButton.Text = "Text";
+            textEncodeButton.UseVisualStyleBackColor = true;
+            textEncodeButton.Click += asciiEncodeButton_Click;
             // 
             // hexEncodeButton
             // 
@@ -285,8 +272,7 @@
         private RichTextBox richTextBox;
         private Button deleteButton;
         private ColumnHeader DestinationPort;
-        private Button asciiEncodeButton;
+        private Button textEncodeButton;
         private Button hexEncodeButton;
-        private Button utf8EncodeButton;
     }
 }

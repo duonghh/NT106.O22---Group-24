@@ -81,7 +81,7 @@ namespace NetworkScanner
             socket.Bind(new IPEndPoint(target, 0));
             socket.SetSocketOption(SocketOptionLevel.IP, SocketOptionName.HeaderIncluded, true);
 
-            byte[] bytesIn = new byte[4] { 1, 0, 0, 0 };
+            byte[] bytesIn = new byte[4] {1, 0, 0, 0};
             byte[] bytesOut = new byte[4];
             socket.IOControl(IOControlCode.ReceiveAll, bytesIn, bytesOut);
 
@@ -201,7 +201,7 @@ namespace NetworkScanner
 
                             node.Nodes.Add("Protocol version: " + selectedPacket.Version);
                             node.Nodes.Add("Header lenght: " + selectedPacket.HeaderLength);
-                            node.Nodes.Add("Type ofservice: " + selectedPacket.TypeOfService);
+                            node.Nodes.Add("Type of service: " + selectedPacket.TypeOfService);
                             node.Nodes.Add("Total lenght: " + selectedPacket.TotalLength);
                             node.Nodes.Add("Identification No: " + selectedPacket.Identification);
                             node.Nodes.Add("Flags: " + selectedPacket.Flags);
@@ -282,28 +282,31 @@ namespace NetworkScanner
         private void asciiEncodeButton_Click(object sender, EventArgs e)
         {
             hexEncodeButton.Enabled = true;
-            utf8EncodeButton.Enabled = true;
-            asciiEncodeButton.Enabled = false;
+            textEncodeButton.Enabled = false;
 
-            richTextBox.Text = Encoding.ASCII.GetString(selectedPacketPayload);
+            string hexString = BitConverter.ToString(selectedPacketPayload).Replace("-", "").Replace("00", string.Empty);
+            richTextBox.Text = HexToString(hexString);
         }
 
         private void hexEncodeButton_Click(object sender, EventArgs e)
         {
-            asciiEncodeButton.Enabled = true;
-            utf8EncodeButton.Enabled = true;
+            textEncodeButton.Enabled = true;
             hexEncodeButton.Enabled = false;
 
             richTextBox.Text = BitConverter.ToString(selectedPacketPayload).Replace("-", " ").Replace(" 00", string.Empty);
         }
 
-        private void utf8EncodeButton_Click(object sender, EventArgs e)
+        private string HexToString(string hexString)
         {
-            hexEncodeButton.Enabled = true;
-            asciiEncodeButton.Enabled = true;
-            utf8EncodeButton.Enabled = false;
+            StringBuilder stringBuilder = new StringBuilder(hexString.Length / 2);
 
-            richTextBox.Text = Encoding.UTF8.GetString(selectedPacketPayload);
+            for (int i = 0; i < hexString.Length; i += 2)
+            {
+                string hexPair = hexString.Substring(i, 2);
+                byte byteValue = byte.Parse(hexPair, System.Globalization.NumberStyles.HexNumber);
+                stringBuilder.Append((char)byteValue);
+            }
+            return stringBuilder.ToString();
         }
     }
 }
