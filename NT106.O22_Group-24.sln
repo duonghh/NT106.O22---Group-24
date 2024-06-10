@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caculator", "BaiTap_Tuan-1-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleWindowExplorer", "SimpleWindowExplorer\SimpleWindowExplorer.csproj", "{DD39CB8B-487D-427C-AEB7-50146828D34A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Baitap3_Client", "..\..\NT106.O22_Nhom05_Tuan5-7-main\Client\Baitap3_Client.csproj", "{83067264-2D6D-4447-A309-1A524ADA5F04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Baitap03_Client", "..\..\NT106.O22_Nhom05_Tuan5-7-main\Client\Baitap03_Client.csproj", "{2A39302C-C2BB-4B35-8575-7F8E5D7B729C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Baitap3_Server", "..\..\NT106.O22_Nhom05_Tuan5-7-main\Server\Baitap3_Server.csproj", "{3063F875-D673-4CE3-B29D-1783727F29A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Baitap03_Server", "..\..\NT106.O22_Nhom05_Tuan5-7-main\Server\Baitap03_Server.csproj", "{6A69D867-4B0E-48F7-B452-F88DDFD07A32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{DD39CB8B-487D-427C-AEB7-50146828D34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD39CB8B-487D-427C-AEB7-50146828D34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD39CB8B-487D-427C-AEB7-50146828D34A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{83067264-2D6D-4447-A309-1A524ADA5F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83067264-2D6D-4447-A309-1A524ADA5F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83067264-2D6D-4447-A309-1A524ADA5F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83067264-2D6D-4447-A309-1A524ADA5F04}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3063F875-D673-4CE3-B29D-1783727F29A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3063F875-D673-4CE3-B29D-1783727F29A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3063F875-D673-4CE3-B29D-1783727F29A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3063F875-D673-4CE3-B29D-1783727F29A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A39302C-C2BB-4B35-8575-7F8E5D7B729C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A39302C-C2BB-4B35-8575-7F8E5D7B729C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A39302C-C2BB-4B35-8575-7F8E5D7B729C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A39302C-C2BB-4B35-8575-7F8E5D7B729C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A69D867-4B0E-48F7-B452-F88DDFD07A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A69D867-4B0E-48F7-B452-F88DDFD07A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A69D867-4B0E-48F7-B452-F88DDFD07A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A69D867-4B0E-48F7-B452-F88DDFD07A32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
