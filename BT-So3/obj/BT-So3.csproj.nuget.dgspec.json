@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj": {}
+    "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\BT-So3\\BT-So3.csproj": {}
   },
   "projects": {
-    "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj": {
+    "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\BT-So3\\BT-So3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj",
-        "projectName": "SimpleWindowExplorer",
-        "projectPath": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\SimpleWindowExplorer\\SimpleWindowExplorer.csproj",
+        "projectUniqueName": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\BT-So3\\BT-So3.csproj",
+        "projectName": "BT-So3",
+        "projectPath": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\BT-So3\\BT-So3.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\SimpleWindowExplorer\\obj\\",
+        "outputPath": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\BT-So3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,12 +44,6 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "dependencies": {
-            "Microsoft.Web.WebView2": {
-              "target": "Package",
-              "version": "[1.0.2365.46, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\Caculator.csproj",
-      "projectName": "Caculator",
-      "projectPath": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\Caculator.csproj",
+      "projectUniqueName": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\BT-So3\\BT-So3.csproj",
+      "projectName": "BT-So3",
+      "projectPath": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\BT-So3\\BT-So3.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\BaiTap_Tuan-1-2\\obj\\",
+      "outputPath": "D:\\Ho Hai Duong\\UIT\\N_3\\NT106 - LTMCB\\ABT3\\NT106.O22_Group-24\\BT-So3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
